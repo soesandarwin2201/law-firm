@@ -1,0 +1,15 @@
+.standard-paragraph {
+   line-height: $line-height-medium;
+ 
+   @include phone {
+     font-size: $font-size-light;
+   }
+ }
+ 
+ .small-line-height-paragraph {
+   line-height: $line-height-small;
+ 
+   @include phone {
+     font-size: $font-size-light;
+   }
+ }

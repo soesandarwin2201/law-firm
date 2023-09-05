@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+/* Default Font Variables */
+$font-size-xs: 0.75rem; // 12px;
+$font-size-small: 0.875rem; // 14px;
+$font-size-light: 0.938rem; // 15px;
+$font-size-base: 1rem; //16px;
+$font-size-medium: 1.125rem; // 18px;
+$font-size-large: 1.250rem; // 20px;
+$font-size-xl: 1.500rem; // 24px;
+$font-size-2xl: 1.75rem; // 28px;
+$font-size-3xl: 2.25rem; //36px;
+
+/* Font Families */
+$font-family-primary: 'Source Sans 3', sans-serif;
+$font-family-secondary: 'Lexend', sans-serif;
+
+/* Font Weights */
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+/* Line Height */
+$line-height-small: 1.4;
+$line-height-medium: 1.6;
+$line-height-large: 1.8;

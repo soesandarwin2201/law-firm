@@ -1,0 +1,36 @@
+@mixin transition($property) {
+	transition: $property 0.2s ease-in;
+}
+
+@mixin list-unstyled {
+	list-style: none;
+}
+
+@mixin anchor-unstyled {
+	text-decoration: none;
+	color: inherit;
+}
+
+@mixin nav-item-hover {
+	@include transition(color);
+
+	&:hover {
+		color: $color-link-hover;
+	}
+}
+
+@mixin section-padding {
+	padding: spacer(6) 0;
+
+  @include desktop {
+    padding: spacer(4) spacer(2)
+  }
+
+  @include tablet {
+    padding: spacer(4) spacer(2)
+  }
+
+  @include phone {
+		padding: spacer(4) spacer(1);
+	}
+}

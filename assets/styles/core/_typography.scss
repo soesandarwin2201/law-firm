@@ -1,0 +1,96 @@
+body {
+   font-family: $font-family-primary;
+   font-size: $font-size-base;
+   color: $color-primary;
+ }
+ 
+ // Headings
+ // --------------------------------------------------
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   margin-top: 0;
+   margin-bottom: 1rem;
+   font-family: $font-family-secondary;
+   line-height: $line-height-small;
+ }
+ 
+ // Body text
+ // --------------------------------------------------
+ 
+ p {
+   margin-top: 0;
+   margin-bottom: 1rem;
+   font-weight: $font-weight-regular;
+   font-family: $font-family-primary;
+   font-size: $font-size-medium;
+ }
+ 
+ small {
+   font-size: 90%;
+ }
+ 
+ blockquote {
+   margin: 0;
+ }
+ 
+ // text formats
+ 
+ b {
+   font-weight: $font-weight-bold;
+ }
+ 
+ // Lists
+ // --------------------------------------------------
+ 
+ ul,
+ ol {
+   padding-left: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+ }
+ 
+ ol ol,
+ ul ol {
+   list-style-type: lower-roman;
+ }
+ 
+ ul ul ol,
+ ul ol ol,
+ ol ul ol,
+ ol ol ol {
+   list-style-type: lower-alpha;
+ }
+ 
+ dd {
+   margin-left: 0;
+ }
+ 
+ // Monospaced
+ // --------------------------------------------------
+ 
+ tt,
+ code,
+ samp {
+   font-family: $font-family-secondary;
+   font-size: $font-size-small;
+ }
+ 
+ pre {
+   margin-top: 0;
+   margin-bottom: 0;
+   font-family: $font-family-secondary;
+   font-size: $font-size-small;
+ }
+ 
+ // Octicons
+ // --------------------------------------------------
+ 
+ // Move this over here as a temporary override to the octicons source repo
+ // instead of updating that upstream.
+ .octicon {
+   vertical-align: text-bottom;
+ }
