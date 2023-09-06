@@ -18,8 +18,15 @@
    @include flex(center,.7rem,column);
    width: $width_percent;
    height: $height_percent;
+   margin-top: 2.3rem;
 }
 
+.hero-title {
+   color: $bright;
+   font-size: $font-size-2xl;
+   font-family: $font-family-primary;
+   font-weight: $font-weight-bold;
+}
 
 .hero-info{
    width: $width_half;
@@ -27,4 +34,55 @@
 
 .btn-container {
    @include flex(space-between,1.5rem,row);
+}
+
+.dynamic-text {
+   margin-left: 15px;
+   height: 90px;
+   line-height: 90px;
+   overflow: hidden;
+}
+
+.dynamic-list {
+   color: $bright;
+   font-size: 60px;
+   font-weight: 500;
+   list-style: none;
+   position: relative;
+   top: 0;
+   animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+   100%{
+      top: -360px;
+   }
+   
+}
+
+.text {
+   position: relative;
+   margin: 5px 0;
+   line-height: 90px;
+}
+
+.text::after{
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   border-left: 2px solid $bright;
+   left: 0;
+   background-color: rgba(0,0,0,.97);
+   animation: typing 3s steps(14) alternate infinite,
+   line 1s infinite;
+}
+
+@keyframes typing {
+   40%, 60%{
+      left: calc(100% + 30px);
+   }
+   100%{
+      left: 0;
+   }
 }

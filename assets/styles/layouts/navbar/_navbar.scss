@@ -12,10 +12,7 @@
  }
  
  .nav-container {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 4rem;
+  @include flex(space-between,.7rem,row);
    height: 100%;
    background: transparent;
  
