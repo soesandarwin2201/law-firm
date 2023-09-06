@@ -1,0 +1,99 @@
+.header-section {
+  position: relative;
+}
+
+.navbar {
+   width: 100%;
+   padding: spacer(2);
+ 
+   @include tablet-phone {
+       padding: spacer(1);
+    }
+ }
+ 
+ .nav-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 4rem;
+   height: 100%;
+   background: transparent;
+ 
+   @include phone {
+       padding: 0;
+    }
+ 
+   @include tablet-phone {
+     flex-wrap: wrap;
+     justify-content: space-between;
+   }
+ 
+   .brand-logo {
+     width: 150px;
+     height: 50px;
+     border: 2px solid orange;
+     padding: spacer(1) spacer(2);
+     border-radius: 20px;
+     color: $bright;
+ 
+     @include tablet-phone {
+       width: 130px;
+       height: 45px;
+     }
+
+     @include phone {
+       width: 120px;
+       height: 40px;
+     }
+   }
+ 
+   .navbar-brand {
+     margin-right: spacer(3);
+     text-decoration: none;
+   }
+
+ 
+   #navbar-toggler:checked ~ .nav-list {
+     display: flex;
+   }
+ 
+   .nav-list {
+     display: flex;
+     flex-grow: 1;
+ 
+     @include tablet-phone {
+       display: none;
+       width: 100%;
+       padding: spacer(2) 0;
+       flex-direction: column;
+       flex-wrap: wrap;
+     }
+ 
+     // styles applied to all nav items
+     .nav-item {
+       @include list-unstyled;
+       @include nav-item-hover;
+     
+       cursor: pointer;
+       padding: spacer(1) spacer(2);
+ 
+       @include desktop {
+         padding: spacer(1);
+       }
+ 
+       @include tablet-phone {
+         padding: spacer(2);
+         border-bottom: 1px solid $color-border;
+         order: 2;
+       }
+ 
+       .nav-link {
+         @include anchor-unstyled;
+         color: $bright;
+         font-size: $font-size-medium;
+       }
+     }
+ 
+
+   }
+ }

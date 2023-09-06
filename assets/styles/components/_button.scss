@@ -16,16 +16,41 @@
  .btn-contained {
    @include transition(background-color);
  
-   background-color: darken($blue, 15%);
+   background-color: $orange;
    color: $bright;
  
    &:hover {
-     background-color: darken($blue, 20%);
+     border: 1px solid $orange;
+     background-color: transparent;
+     color: $orange;
    }
  
    &:active {
-     background-color: darken($blue, 20%);
+     background-color: darken($orange, 20%);
      outline: none;
-     box-shadow: 0 0 0 4px lighten($blue, 20%);
+     box-shadow: 0 0 0 4px lighten($orange, 20%);
    }
+ }
+
+ .btn-start{
+  @include transition(background-color);
+ 
+   background-color: transparent;
+   color: $bright;
+   border: 1px solid $bright;
+ 
+   &:hover {
+    background-color: $bright;
+    color: $dark;
+    border: none;
+     
+   }
+ 
+   &:active {
+     background-color: darken($dark, 20%);
+     outline: none;
+     box-shadow: 0 0 0 4px lighten($bright, 20%);
+   }
+  
+
  }

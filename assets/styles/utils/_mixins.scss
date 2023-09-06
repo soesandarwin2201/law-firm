@@ -2,6 +2,14 @@
 	transition: $property 0.2s ease-in;
 }
 
+@mixin flex($justify,$gap: 1rem,$direction: colum){
+	flex-direction: $direction;
+	display: flex;
+	justify-content: $justify;
+	align-items: center;
+	gap: $gap;
+}
+
 @mixin list-unstyled {
 	list-style: none;
 }
