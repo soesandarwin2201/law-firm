@@ -63,6 +63,9 @@
        width: 100%;
        padding: spacer(2) 0;
        flex-direction: column;
+       z-index: 1000;
+       background-color: rgba(0,0,0,0.9);
+       border-radius: 20px;
        flex-wrap: wrap;
      }
  
@@ -80,7 +83,7 @@
  
        @include tablet-phone {
          padding: spacer(2);
-         border-bottom: 1px solid $color-border;
+         border-bottom: 1px solid $orange;
          order: 2;
        }
  
