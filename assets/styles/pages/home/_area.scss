@@ -1,0 +1,73 @@
+.area-section {
+   width: 100%;
+   height: 100%;
+   background-color: #262b3e;
+   display: flex;
+   flex-direction: column;
+   align-items: center;margin-top: 2rem;
+}
+
+.area-title-wrapper {
+   margin-top: 1rem;
+   @include flex(center,.3rem,column);
+   width: 35vw;
+
+   @include tablet-phone{
+      width: 75vw;
+      margin: 1rem;
+   }
+
+   .fa-gavel{
+      font-size: 2.5rem;
+      color: $bright;
+   }
+
+   .area-title {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $bright;
+   }
+
+   .title-span {
+      color: $orange;
+   }
+}
+
+.area-card-container {
+   @include flex(center,1.3rem,row);
+   flex-wrap: wrap;
+   width: 95vw; 
+
+   @include tablet-phone{
+      flex-direction: column;
+   }
+
+   .area-card {
+      margin-top: 1rem;
+      flex-basis: 25%;
+      @include flex(center,.1rem,column);
+      padding: 1rem;
+
+      @include tablet-phone{
+         margin-top: .4rem;
+         padding: .5rem;
+      }
+   }
+
+   .fa-solid {
+      font-size: 2.2rem;
+      color: $orange;
+      margin-bottom: .5rem;
+   }
+
+   .area-card-title {
+      font-size: 1.6rem;
+      color: $bright;
+   }
+
+   .area-card-info {
+      text-align: center;
+      letter-spacing: 2px;
+   }
+}
+
