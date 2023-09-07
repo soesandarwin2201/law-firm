@@ -7,17 +7,12 @@
    height: $height_full;
    background-color: rgba(0,0,0,0.7);
    background-blend-mode: multiply;
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: -1;
    text-align: center;
    
 .hero-info-wrapper {
    @include flex(center,.5rem,column);
    width: $width_percent;
    height: $height_percent;
-   margin-top: 2.3rem;
 
    .hero-title {
       color: $bright;

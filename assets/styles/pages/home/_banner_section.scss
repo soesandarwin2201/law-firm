@@ -1,0 +1,34 @@
+.banner-section {
+   width: $width_full;
+   height: $height_auto;
+   @include flex(space-around);
+
+   @include tablet-phone{
+      flex-direction: column;
+   }
+
+   .banner-item {
+      margin-top: 1rem;
+      flex-basis: 23%;
+      @include flex(center,.1rem,column);
+      padding: 1rem;
+   }
+   
+   .fa-solid {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+   }
+   
+   .banner-text {
+      font-size: 2rem;
+      font-weight: 900;
+      color: $orange;
+   }
+   
+   .banner-info {
+      color: $dark;
+      font-size: 1.2rem;
+      font-weight: 600;
+   }
+}
+

@@ -1,10 +1,7 @@
-.header-section {
-  position: relative;
-}
-
 .navbar {
    width: 100%;
    padding: spacer(2);
+   background-color: $dark;
  
    @include tablet-phone {
        padding: spacer(1);
