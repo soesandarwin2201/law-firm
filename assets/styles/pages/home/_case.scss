@@ -1,0 +1,97 @@
+.case-section {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 2rem;
+   padding-bottom: 3rem;
+
+   .area-title {
+      color: $dark;
+   }
+
+   .fa-gavel{
+      color: $dark;
+   }
+
+   .area-info {
+      color: $dark;
+   }
+
+   .case-btn-container {
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .filter-btn {
+      display: inline-block;
+      padding: spacer(1) spacer(2);
+      border: none;
+      border-radius: 4px;
+      font-size: $font-size-medium;
+      text-align: center;
+      text-decoration: none;
+      background-color: transparent;
+      border: 1px solid rgba(0,0,0,0.6);
+      cursor: pointer;
+ 
+      @include phone {
+     font-size: $font-size-base;
+     }
+    }
+
+    .filter-btn:hover{
+      background-color: $orange;
+      color: $bright;
+      border: none;
+    }
+
+    .case-card-container {
+      @include flex(center,1.4rem,row);
+      flex-wrap: wrap;
+    }
+
+    .menu-item {
+      flex-basis: 28%;
+      position: relative;
+
+      @include tablet-phone{
+        flex-basis: 100%;
+      }
+    }
+
+    .photo {
+      border-radius: 2px;
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      transition:opacity 0.6s ease;
+    }
+
+    .content:hover{
+      opacity: 1;
+    }
+
+    .content > * {
+      transform: translateY(25px);
+      transition: transform 0.6s;
+    }
+
+    .content:hover > * {
+      transform: translateY(0px);
+    }
+}
