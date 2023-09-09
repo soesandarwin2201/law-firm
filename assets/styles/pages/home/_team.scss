@@ -1,0 +1,60 @@
+.team-container {
+  @include flex(center,1.3rem,row);
+  padding: 2rem;
+
+  @include tablet-phone{
+   flex-direction: column;
+  }
+
+  .team-card {
+   flex-basis: 22%;
+   @include flex(center,.5rem,column);
+
+   @include tablet-phone{
+      flex-basis: 100%;
+   }
+
+   .team-img-container {
+      flex-basis: 28%;
+   }
+
+
+   .team-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .4s ease;
+      border-radius: 20px;
+   }
+
+   .team-img:hover{
+      scale: 1.1;
+   }
+
+   .team-card-info {
+      flex-basis: 50%;
+      text-align: center;
+   }
+
+   .team-name {
+      color: $bright;
+   }
+
+   .team-job {
+      font-size: 1.5rem;
+      color: $orange;
+      font-weight: 600;
+
+   }
+
+   .social-lists {
+      @include flex(center,.5rem,row);
+      list-style: none;
+   }
+
+   .fa-brands {
+      font-size: 1.1rem;
+      color: $orange;
+   }
+  }
+}

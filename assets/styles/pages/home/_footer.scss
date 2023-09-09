@@ -1,0 +1,115 @@
+.brand-section {
+   @include flex(center,1rem,row);
+   padding: 2rem;
+   background-color: #efefef;
+
+   .brand{
+      width: 20%;
+   }
+
+}
+
+.footer-section {
+   background-color: #262b3e;
+   @include flex(center,2rem,row);
+   align-items: flex-start;
+   padding: 2rem; 
+
+   @include tablet-phone{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+}
+
+.footer {
+   flex-basis: 20%;
+   @include flex(flex-start,1rem,column);
+
+   @include tablet-phone{
+      flex-basis: 100%;
+   }
+}
+
+.footer-logo-info {
+   margin: 1rem;
+   font-size: .9rem;
+   letter-spacing: 3px;
+}
+
+.social-lists {
+   @include flex(center,1rem,row);
+}
+
+.social-items {
+   text-align: left;
+   list-style: none;
+   border: 1px solid $bright;
+   padding: 1rem;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: .5s ease-in-out;
+}
+
+.social-items:hover{
+   background-color: $orange;
+}
+
+.fa-brands {
+   color: $bright;
+   font-size: 1rem;
+}
+
+.brand-logo {
+   width: 150px;
+   height: 50px;
+   border: 2px solid orange;
+   padding: spacer(1) spacer(2);
+   border-radius: 20px;
+   color: $bright;
+
+   @include tablet-phone {
+     width: 130px;
+     height: 45px;
+   }
+
+   @include phone {
+     width: 120px;
+     height: 40px;
+   }
+ }
+
+ .footer-title {
+   font-size: 1.4rem;
+   color: $bright;
+ }
+
+ .footer-items {
+   list-style: none;
+   padding: .4rem;
+ }
+
+ .footer-link {
+   color: $bright;
+   font-size: 1rem;
+ }
+
+ .blog-lists {
+   list-style: none;
+   padding: .7rem;
+   border-bottom: 1px solid gray;
+   color: $bright;
+ }
+
+ .footer-btn  {
+   background-color: transparent;
+   border: 1px solid $bright;
+   padding: .6rem 1.3rem;
+   color: $bright;
+   font-size: .7rem;
+   margin: .2rem;
+ }
