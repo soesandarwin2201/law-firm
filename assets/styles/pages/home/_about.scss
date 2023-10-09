@@ -1,0 +1,38 @@
+.about-section {
+   display: flex;
+   width: 95vw;
+   height: 70vh;
+   margin-top: 2rem;
+
+   @include tablet-phone{
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      padding: 1rem;
+   }
+}
+
+.swiper {
+   flex-basis: 45%;
+
+   @include tablet-phone{
+      flex-basis: 60%;
+      height: 100vh;
+      width: 100%;
+   }
+ }
+
+ .swiper-slide img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 2px;
+ }
+
+ .about-info-container {
+   flex-basis: 50%;
+ }
+
+ .about-info {
+   color: $dark;
+ }

@@ -1,0 +1,20 @@
+.contact-form {
+   margin-top: 2rem;
+   @include flex(center,1rem,column);
+   width: 55vw;
+
+   .input{
+      width: 100%;
+      padding: 1rem 2rem;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      border-bottom: 1px solid $bright;
+      margin-bottom: 1rem;
+   }
+
+   .input:focus{
+      border-bottom: 1px solid $orange;
+   }
+}
+

@@ -1,0 +1,39 @@
+.review-card-container {
+   @include flex(center,1rem,row);
+   flex-wrap: wrap;
+}
+
+.review-card {
+   flex-basis: 30%;
+   padding: 3rem;
+   background-color: #262b3e;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   border-radius: 5px;
+   @include flex(center,1rem,column);
+
+   @include tablet-phone{
+      flex-basis: 100%;
+   }
+
+   .review-span{
+      font-size: 2rem;
+      color: $orange;
+
+   }
+
+   .review-person {
+      @include flex(center,2rem,row);
+   }
+
+   .person-name {
+      color: $orange;
+      font-weight: 400;
+      text-align: right;
+   }
+   
+   .person-image {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+   }
+}

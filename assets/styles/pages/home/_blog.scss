@@ -1,0 +1,31 @@
+a {
+   text-decoration: none;
+
+}
+
+.blog-info {
+   @include flex(space-between,1rem,row);
+   list-style: none;
+
+}
+
+.blog-writer {
+   color: $dark;
+}
+
+.fa-user {
+   color: $orange;
+}
+
+.blog-law {
+   color: $dark;
+}
+
+.fa-comments {
+   color: $orange;
+}
+
+.detail{
+   color: $dark;
+   text-align: left;
+}
